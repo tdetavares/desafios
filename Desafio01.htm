@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
+    
+</head>
+<p>Calculadora</p>
+
+<body>
+    <form>
+        <div class="form-row">
+            <div class="from-group col-md-6">
+                <label>Digite um valor:</label>
+                <input type="text" class="form-control" placeholder="Por favor digite um valor" id="n1">
+            </div>
+            <div class="from-group col-md-6">
+                <label>Digite um valor:</label>
+                <input type="text" class="form-control" placeholder="Por favor digite um valor" id="n2">
+                <br><br>
+                <form action="">
+                    <select name="calculo" id="calc">
+                        <option value="Selecione um Operação">Operação</option>
+                        <option value="1">Subtração</option>
+                        <option value="2">Adição</option>
+                        <option value="3">Divisão</option>
+                        <option value="4">Multiplicação</option>
+                    </select>
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <br><br>
+                    <label for="res">Resultado:</label>
+                    <input type="text" name="res" id="res"/>
+
+            </div>
+        </div>
+    </form>
+    <script src="js/query.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script src='Desafio01.js'></script>
+</body>
+
+</html>

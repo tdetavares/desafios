@@ -1,0 +1,36 @@
+div#comeco {
+    font: normal 20pt Arial;
+    background: rgb(233, 187, 187);
+    color: white;
+    font: normal 50pt Arial;
+    font-family: fantasy;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}
+
+select#operacoes{
+    margin-top: 30px;
+    color: blueviolet;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 50px;
+    
+    
+}
+input{
+    margin-top: 20px;
+    color: blueviolet;
+    height: 43px;
+    text-align: center;
+}
+div#conteudo{
+    text-align: center;
+}
+div#resultado{
+    border:1px solid coral;
+    margin: 30px;
+    font: normal 20pt Arial;
+    font-family: monospace;
+  
+}

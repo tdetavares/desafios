@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
+    <script src='desafio2-19-11.js'></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Objeto Math</h1>
+
+            <div class="container">
+
+                <p class="lead">Crie um formulário com botões e inputs para realizar no mínimo 5 operações
+                    usando funções do próprio Javascript, os resultados devem ser apresentados
+                    em containers do tipo paragrafo.</p>
+            </div>
+        </div>
+        </p>
+    </div>
+    <div class="container">
+        <form>
+            <!--Primeiro exercicio-->
+            <div class="form-group">
+                <label for="exampleInputEmail1">Digite dois números, que faremos a divisão, devolvendo um número
+                    redondo.</label>
+                <input type="text" class="form-control" id="numero1" aria-describedby="emailHelp"
+                    placeholder="Digite um número">
+
+            </div>
+            <div class="form-group">
+
+                <input type="text" class="form-control" id="numero2" placeholder="Digite um número">
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="math1()">Devolver número redondo</button>
+            <p id="res1"></p>
+        </form>
+
+        <hr class="my-4" style=" background-color: #f00;">
+        <!--Segundo exercicio-->
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Digite dois números, elevaremos o primeiro ao segundo.</label>
+                <input type="text" class="form-control" id="nu1" aria-describedby="emailHelp"
+                    placeholder="Digite um número">
+
+            </div>
+            <div class="form-group">
+
+                <input type="text" class="form-control" id="nu2" placeholder="Digite um número">
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="math2()">MOSTRAR</button>
+            <p id="res2">
+        </form>
+        <hr class="my-4" style=" background-color: #f00;">
+        <!--Terceiro exercicio-->
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Digite um número que lhe faremos a raiz quadrada</label>
+                <input type="text" class="form-control" id="rq" aria-describedby="emailHelp"
+                    placeholder="Digite um número">
+
+            </div>
+            
+
+            <button type="button" class="btn btn-primary" onclick="math3()">Raíz quadrada</button>
+            <p id="res3">
+                <!--Quarto exercicio-->
+            <div class="form-group">
+                    <label for="exampleInputEmail1">Digite dois números, que faremos a divisão, devolvendo para baixo um número inteiro</label>
+                    <input type="text" class="form-control" id="num1" aria-describedby="emailHelp"
+                        placeholder="Digite um número">
+    
+                </div>
+                <div class="form-group">
+    
+                    <input type="text" class="form-control" id="num2" placeholder="Digite um número">
+                </div>
+    
+                <button type="button" class="btn btn-primary" onclick="math4()">Devolver número inteiro</button>
+                <p id="res4"></p>
+            </form>
+    
+            <hr class="my-4" style=" background-color: #f00;">
+            <!--Quinto exercicio-->
+            <div class="form-group">
+                    <label for="exampleInputEmail1">Digite dois números, que faremos a divisão, devolvendo para cima um número inteiro</label>
+                    <input type="text" class="form-control" id="nume1" aria-describedby="emailHelp"
+                        placeholder="Digite um número">
+    
+                </div>
+                <div class="form-group">
+    
+                    <input type="text" class="form-control" id="nume2" placeholder="Digite um número">
+                </div>
+    
+                <button type="button" class="btn btn-primary" onclick="math5()">Devolver número inteiro</button>
+                <p id="res5"></p>
+            </form>
+    
+            <hr class="my-4" style=" background-color: #f00;">
+    </div>
+
+    <script src="js/query.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
