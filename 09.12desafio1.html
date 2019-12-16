@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="acendeapaga"></div>
+
+    <script type="text/babel">
+
+    function BotaoAcender(props){
+        return(
+            <img src="desligada.gif"></img>,
+            <button onClick={props.onClick}>
+            ACENDER
+            </button>
+        );
+
+    }
+    function BotaoApagar(props){
+        return(
+            <img src="ligada.gif"></img>,
+            <button onClick={props.onClick}>
+                APAGAR
+            </button>
+        )
+    }
+
+        class Luz extends React.Component {
+            constructor(props) {
+                super(props);
+                this.acender = this.acender.bind(this)
+                this.apaga = this.apaga.bind(this)
+                this.state = {
+                    acende: false
+                }
+
+
+            }
+            acender() {
+                this.setState({ acende: true });
+            }
+            apaga() {
+                this.setState({ acende: false });
+            }
+
+            render() {
+            const acende =  this.state.acende;
+            let button;
+            let imagem;
+
+            if(acende){
+                button=<BotaoApagar onClick={this.apaga}/>;
+                imagem= <img src="ligada.gif"/>
+
+            }
+            else{
+                
+                button=<BotaoAcender onClick={this.acender}/>;
+                imagem= <img src="desligada.gif"/>
+            }
+
+
+
+                return (
+                    <div>
+                        
+                       {imagem}<br></br>
+                       {button}
+                       
+
+                    </div>
+                )
+            }
+
+        }
+    
+        ReactDOM.render(<Luz />, document.getElementById("acendeapaga"))
+    </script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+</body>
+</html>
