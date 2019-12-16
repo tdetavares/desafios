@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var nota=[]
+        var resultado=0
+        var aluno=0
+        
+        for (let i=0; i<=4;i++){
+            nota[i] = Number(prompt("Digite o valor da nota:"))
+            resultado += nota[i]
+            
+        }
+        
+        var media=resultado/nota.length
+
+        for (let i=0;i<=4;i++){
+            if (nota[i]>6){
+                aluno++
+            }
+
+        }  
+        
+    
+        document.write(`A média dos alunos é: ${media}<br>`)
+        document.write("A quantidade dos alunos acima da média são: " + aluno)
+    </script>
+</body>
+</html>
